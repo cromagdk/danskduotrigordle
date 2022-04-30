@@ -31,6 +31,9 @@ const ALPHABET = new Set([
   "X",
   "Y",
   "Z",
+  "Æ",
+  "Ø",
+  "Å",
 ]);
 
 type KeyboardProps = {
@@ -72,6 +75,7 @@ export default function Keyboard(props: KeyboardProps) {
       <Key char="I" />
       <Key char="O" />
       <Key char="P" />
+      <Key char="Å" />
       <Key char="A" />
       <Key char="S" />
       <Key char="D" />
@@ -81,8 +85,8 @@ export default function Keyboard(props: KeyboardProps) {
       <Key char="J" />
       <Key char="K" />
       <Key char="L" />
-      <Key char="enter-1" />
-      <Key char="backspace" />
+      <Key char="Æ" />
+      <Key char="Ø" />
       <Key char="Z" />
       <Key char="X" />
       <Key char="C" />
@@ -90,6 +94,8 @@ export default function Keyboard(props: KeyboardProps) {
       <Key char="B" />
       <Key char="N" />
       <Key char="M" />
+      <Key char="backspace" />
+      <Key char="enter-1" />
       <Key char="enter-2" />
       <Key char="enter-3" />
     </div>
