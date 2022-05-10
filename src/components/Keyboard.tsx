@@ -127,8 +127,9 @@ function Key(props: KeyProps) {
   const guesses = useSelector((s) => s.game.guesses);
 
   const wideMode = useSelector((s) => s.settings.wideMode);
-  const hideCompletedBoards = useSelector((s) => s.settings.hideCompletedBoards);
-
+  const hideCompletedBoards = useSelector(
+    (s) => s.settings.hideCompletedBoards
+  );
   const styles = useMemo(
     () => generateStyles(char, targets, guesses, wideMode, hideCompletedBoards),
     [char, targets, guesses, wideMode, hideCompletedBoards]
