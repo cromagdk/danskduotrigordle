@@ -29,13 +29,13 @@ export default function About() {
   return (
     <div className={cn("popup-wrapper", !shown && "hidden")}>
       <div className="popup">
-        <p>Guess all 32 Duotrigordle words in 37 tries!</p>
+        <p>Gæt alle 32 danske Duotrigordle ord i 37 forsøg, eller færre!</p>
         <p>
-          A new Daily Duotrigordle will be available in {hoursRemaining} hour
-          {hoursRemaining === "1" ? "" : "s"}.
+          En ny daglig dansk Duotrigordle vil være klar om {hoursRemaining} time
+          {hoursRemaining === "1" ? "" : "r"}.
         </p>
         <hr className="separator" />
-        <p>Duotrigordle by Bryan Chen</p>
+        <p>Dansk Duotrigordle er baseret på "Duotrigordle" lavet af Bryan Chen</p>
         <p>
           Source code on{" "}
           <a
@@ -47,7 +47,7 @@ export default function About() {
           </a>
         </p>
         <hr className="separator" />
-        <p>Based on</p>
+        <p>Som igen er baseret på</p>
         <ul>
           <li>
             <a

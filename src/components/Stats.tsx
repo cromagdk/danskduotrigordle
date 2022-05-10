@@ -127,26 +127,26 @@ export default function Stats() {
   return (
     <div className={cn("popup-wrapper", !shown && "hidden")}>
       <div className="popup">
-        <p className="stats-title">Statistics</p>
+        <p className="stats-title">Statistik</p>
         <div className="stats-grid">
           <p className="value">{played}</p>
           <p className="value">{win}</p>
           <p className="value">{currStreak}</p>
           <p className="value">{maxStreak}</p>
-          <p className="label">Played</p>
-          <p className="label">Win %</p>
+          <p className="label">Spillede</p>
+          <p className="label">Vundet %</p>
           <p className="label">
-            Current
+            Sejre
             <br />
-            Streak
+            i træk
           </p>
           <p className="label">
-            Max
+            Max. sejre
             <br />
-            Streak
+            i træk.
           </p>
         </div>
-        <p className="stats-title">Guess Distribution</p>
+        <p className="stats-title">Fordeling af gæt</p>
         <div className="stats-chart">
           {range(6).map((i) => (
             <Fragment key={i}>
@@ -159,34 +159,34 @@ export default function Stats() {
             </Fragment>
           ))}
         </div>
-        <p className="stats-title">Times</p>
+        <p className="stats-title">Tider</p>
         <div className="stats-times">
-          <p>Best Time:</p>
+          <p>Bedste Tid:</p>
           <p>{bestTime}</p>
-          <p>Average Time (last 7):</p>
+          <p>Gennemsnitlig tid (sidste 7):</p>
           <p>{avgTime7}</p>
-          <p>Average Time (all):</p>
+          <p>Gennemsnitlig tid (all):</p>
           <p>{avgTimeAll}</p>
         </div>
         <div className="stats-import">
           <a href="#" onClick={handleAddClick}>
-            Add
+            Tilføj
           </a>
           <a href="#" onClick={handleRemoveClick}>
-            Remove
+            Fjern
           </a>
           <a href="#" onClick={handleListClick}>
-            List
+            Liste
           </a>
           <a
             href="https://github.com/thesilican/duotrigordle/tree/main/docs/Inputting_Stats.md"
             target="_blank"
           >
-            Help
+            Hjælp
           </a>
         </div>
         <button className="close" onClick={() => dispatch(hidePopups())}>
-          close
+          Luk
         </button>
       </div>
     </div>
